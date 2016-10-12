@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"cc2500test\stm32f1xx_hal_gpio.o"
+"cc2500test\stm32f1xx_hal_pwr.o"
+"cc2500test\stm32f1xx_hal_gpio_ex.o"
+"cc2500test\stm32f1xx_hal_uart.o"
+"cc2500test\stm32f1xx_hal_tim.o"
+"cc2500test\stm32f1xx_hal.o"
+"cc2500test\stm32f1xx_hal_dma.o"
+"cc2500test\stm32f1xx_hal_spi.o"
+"cc2500test\stm32f1xx_hal_rcc.o"
+"cc2500test\stm32f1xx_hal_tim_ex.o"
+"cc2500test\stm32f1xx_hal_flash.o"
+"cc2500test\stm32f1xx_hal_flash_ex.o"
+"cc2500test\stm32f1xx_hal_spi_ex.o"
+"cc2500test\stm32f1xx_hal_rcc_ex.o"
+"cc2500test\stm32f1xx_hal_cortex.o"
+"cc2500test\stm32f1xx_hal_msp.o"
+"cc2500test\stm32f1xx_it.o"
+"cc2500test\main.o"
+"cc2500test\system_stm32f1xx.o"
+"cc2500test\startup_stm32f103xb.o"
+--library_type=microlib --strict --scatter "CC2500Test\CC2500Test.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "CC2500Test.map" -o CC2500Test\CC2500Test.axf
